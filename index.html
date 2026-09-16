@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Knights Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    background-color: #971313;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* تقسيم المشروع لصفحات منفصلة ومريحة للعين */
+.page {
+    width: 100%;
+    max-width: 600px;
+    min-height: 100vh;
+    background-color: #1c15ae;
+    border: 1px solid #c418d7;
+    padding: 40px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* تنسيق صفحة الواجهة الأولى */
+#home-page {
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    font-size: 28px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.leaf-icon {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.logo-title {
+    font-size: 36px;
+    color: #d0ca0f; /* لون أخضر داكن فخم يناسب اللوجو */
+    font-weight: bold;
+}
+
+/* تنسيق العناوين الرئيسية */
+h1.section-title {
+    font-size: 38px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* تنسيق الكلمات المكتوبة بالـ p */
+p {
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.content-list {
+    margin-top: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.timeline-item {
+    margin-bottom: 35px; /* مسافات واسعة زي الصورة */
+}
+
+/* تنسيق جدول المحتويات (Index) */
+.index-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.index-table th, .index-table td {
+    border: 1px solid #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+.index-table th {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.index-table td a {
+    font-size: 24px;
+    color: #000000;
+    text-decoration: underline; /* عشان يبان إنه رابط تفاعلي */
+    font-weight: bold;
+}
+
+.index-table td p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* زرار العودة للجدول فوق عشان يسهل الحركة */
+.back-btn {
+    display: inline-block;
+    margin-top: auto;
+    color: #d350d5;
+    text-decoration: none;
+    font-size: 18px;
+    align-self: flex-start;}
+img{
+    text-align: center;
+    width: 400px;
+    border-radius: 5px;
+}
+video{
+    text-align: center;
+    width: 400px;
+    border-radius: 7px;
+}
+
+</style>
+<body>
+
+    <!-- الصفحة الأولى: الواجهة الرئيسية -->
+    <div class="page" id="home-page">
+        <div class="header-text">Unite together</div>
+        
+        <!-- هنا تقدري تحطي صورتك اللوجو لو عندك، ومكانه حالياً شكل ورقة شجر بالـ CSS -->
+        <div class="logo-container">
+            <div class="leaf-icon">🍃</div>
+            <h1 class="logo-title">health knights</h1>
+        </div>
+    </div>
+
+    <!-- جدول المحتويات (Index) التفاعلي بالـ IDs -->
+    <div class="page" id="index-page">
+        <h1 class="section-title">Index</h1>
+        
+        <table class="index-table">
+            <thead>
+                <tr>
+                    <th>Topic</th>
+                    <th>Page Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- الروابط دي بتنقلك للـ IDs اللي تحت لما تضغطي عليها -->
+                    <td><a href="#social-media">Social Media Collaborators</a></td>
+                    <td><p>1</p></td>
+                </tr>
+                <tr>
+                    <td><a href="#timeline">Timeline</a></td>
+                    <td><p>2</p></td>
+                </tr>
+                <tr>
+                    <td><a href="#what-we-did">What We Did</a></td>
+                    <td><p>3</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- صفحة: Social Media Collaborators -->
+    <div class="page" id="social-media">
+        <h1 class="section-title">Social Media collaborators:</h1>
+        <div class="content-list">
+            <p>1) Mohamed Talat</p>
+            <p>2) Adham Amr</p>
+            <p>3) Malek Asfour</p>
+            <p>4) Youssef Khaled</p>
+            <p>5) Youssef Osman</p>
+            <p>6) Malek Shafi</p>
+            <p>7) Mohamed Farouk</p>
+        </div>
+        <a href="#index-page" class="back-btn">Back to Index ↑</a>
+    </div>
+
+    <!-- صفحة: Timeline -->
+    <div class="page" id="timeline">
+        <h1 class="section-title">Timeline</h1>
+        <div class="content-list text-center">
+            <p class="timeline-item">September 1:3 Brainstorming</p>
+            <p class="timeline-item">September 3:4 Planning</p>
+            <p class="timeline-item">September 4:5 Social Media Creation</p>
+            <p class="timeline-item">September 5:10 Working on PowerPoint, word and booklet</p>
+        </div>
+        <a href="#index-page" class="back-btn">Back to Index ↑</a>
+    </div>
+
+    <!-- صفحة: What We Did -->
+    <div class="page" id="what-we-did">
+        <h1 class="section-title">What We Did</h1>
+        <div class="content-list">
+            <p>1. Chose Environmental Conservation</p>
+            <p>2. Researched Facts About health</p>
+            <p>3. Created Instagram Account with logo</p>
+            <p>4. Made Educational Posts</p>
+            <p>5. Created Presentation</p>
+        </div>
+        <a href="#index-page" class="back-btn">Back to Index ↑</a>
+    </div>
+<section class="ana"=vedios and photos >
+    <video src="v1.mp4"></video>
+    <br><br>
+    <img src="p1.jpg" alt="">
+   <br><br>
+        <img src="p2.jpg" alt="">
+        <br><br>
+    <img src="p3.jpg" alt="">
+
+</section>
+</body>
+</html>
